@@ -1,0 +1,10 @@
+# 项目概览
+现在我需要在VS Code上开发一个AI Coding Agent的VS Code插件(Plugin), 核心功能与Codex一致, 具体实现可以参考这个名为Continue的VS Code插件: https://github.com/continuedev/continue.git, 这个仓已经clone在当前目录下的continue文件夹下. 你的工作目录为workspace文件夹. 你编写的所有文件, 存储在这个文件夹下.
+## 项目名称
+这个待开发的VS Code插件名为: CodingAgent@GTS, 需要为其配置一个图标.
+
+## 功能实现
+与Codex的实现保持一致, 确认如下功能必须实现:
+1. 所有界面设计与Codex保持一致;
+2. 支持自定义大模型调用与MCP工具;
+3. 支持在聊天窗口, 显示当前聊天已使用的上下文窗口.
