@@ -1,0 +1,37 @@
+139-16      我需要一个宏，用于搜索A列中包含“无形资产”这一术语的行，并检查C列中对应的单元格是否为空。如果C列的单元格为空，则该宏应将C列中紧邻下方单元格的值上移，填入该空单元格。同时，该宏还应将下方行中D列的值上移一行，以与A列中的“无形资产”文本对齐。例如，如果在A13单元格中发现“无形资产”，而C13单元格为空，则应将C14单元格的值移动到C13单元格，同样地，将D14单元格的值移动到D13单元格。
+
+177-6     我正在寻找一个宏，能够根据Excel表格中某一列的匹配值合并整行数据。在我的案例中，当H列中的值在不同行中相同时，我希望将这些行合并成一行，从而整合它们的数据。我已附上一个包含我数据的示例电子表格。此外，如果参考列发生变化，例如从H列变为G列，我需要指导如何相应地调整宏。具体来说，我不确定是否只需修改宏代码中的“G=7”、“H=8”和“I=9”等部分，就能适应新的参考列。
+
+50952    根据多个搜索参数从Excel的表格中检索出对应的ID,这些参数位于“评论”列（B列）中，而对应的ID则显示在G列中，这些ID的长度并不固定，且可能出现在评论中的任何位置。这些评论可能由空格、破折号等不同字符分隔，并且可能包含与搜索无关的额外信息。此外，搜索参数本身也可能包含破折号，而且并非每条评论都一定有对应的ID。我尝试过将评论内容拆分成单独的列，但由于评论格式各异，参数的呈现并不一致，而且我处理的是一个包含数千条数据的大数据集，这种方法未能奏效。
+
+61-4    How can I identify consecutive negative values in a column for specific stock names, and then merge the related data such that only the opening price from the first date, the closing price from the last date, the highest 'high' price, the lowest 'low' price within those dates are kept, and the volume from these dates is summed? This summarized data should then be sent to an output sheet. The input and output formats are illustrated in an attached Excel document, with color coding for clarity.Remarks : please chek comments inside cell C2,D2,E2,F2,G2.For better understanding, I kept the output to column K:Q,but this data will be shifted to \"Output sheet\".
+
+304-35    How can I delete the values in column F where there are empty cells in column E, as highlighted by the yellow cells in the 'what i need sheet' of my provided Excel file? Additionally, how can I copy the values from column A down the same column, terminating the copy process when an empty cell is encountered in column F, ensuring that index cells (identical index rows like rows 2 and 29) are not copied in the process? For example, cell A29 should not be copied into A30, nor should cell A2 be copied into A3 if row 3 is empty.
+
+41589    How can I create a function that populates a cell in Column J with a specific action based on the last contact date in Column H and a yes/no response in Column I? The function should work as follows: if the date in H4 is less than 30 days before today and I4 is 'YES', then J4 should display 'HOLD'. If H4 is more than 30 days before today and I4 is 'YES', J4 should show 'TOUCH BASE'. In all cases where I4 is 'NO', J4 should show 'NO ACTION'. Additionally, today's date can be displayed in J1 for reference if necessary.
+
+1-13-1   Ccombine data from a 'RANGES' sheet to a 'LISTS' sheet, by matching duplicates based on the 'DATE' and 'REF' columns in columns B and C, and add a 'TOTAL' row to sum up the amounts， Additionally, since new ranges with headers will be added to the 'RANGES' sheet, how do I ensure to delete the old ranges in the 'LISTS' sheet before populating the new data? I have given the correct answer of the \"STAGE\" table in the \"LISTS\" table as a format reference, please help me complete the other answers.
+
+CF_28766   I need help creating a formula in Excel that will allow me to identify and highlight with yellow only the second and subsequent cells containing duplicate names within a single day across multiple rows and columns. Multiple entries can occur for each person on the same day, and I want to avoid counting the first occurrence as a duplicate. I've attempted to use the COUNTIF function and VLOOKUP, and even tried combining the individuals' dates with their names in a separate column, using conditional formatting to highlight duplicates. Unfortunately, it's also highlighting the first occurrence, which I want to exclude. I'm seeking a solution that will help me correct these duplicates by highlighting only the second instance of a name on the same day, without affecting the first entry. I have provided my workbook for reference.
+
+1-23-24   如果Excel文件中A列的某个单词与I列中的任何单词匹配并将自动删除A列该单词及其在B、C、D和E列中的相关详细信息
+
+1-53-12   在当前工作表中，当B列非空单元格的计数大于或等于12时，清除B列和C列的内容。请你给出最终的结果excel文件
+
+1-298-22   在当前工作表中进行计算总工作时长并将结果显示在Excel工作表中的E列，1、上面的电子表格中，列C记录了打卡时间，列D记录了下班打卡时间 2、结果应该为小时+小时的部分表示（例如6小时30分钟应显示为6.5小时而不是6h30min）。请你给出最终的结果excel文件
+
+48643    I am trying to create an Excel spreadsheet to track the total accumulated wealth over a period of time with variable deposits and fluctuating efficiency rates each year, without initially considering inflation. The standard annuity formula does not work due to the variability in deposits and efficiency rates. Could someone guide me to devising the correct formula in Excel to calculate the total wealth, given that for year one, I deposit €1200 with an efficiency of 6% to end with €1272; for year two, I deposit €1500 and conclude with €2910.6 considering the previous year's total; and for year three, with another €1500 deposited, I end the year with €4719.34. What is the right Excel formula to replicate this calculation method for each year?\nFor example,After three years of deposits, I got a total of €4200.Output the corresponding formula. Processes each imported Excel file based on the formula and outputs the result to a new file.
+
+47842   I have a VBA routine that standardizes job descriptions by updating words in the past tense to the simple present tense. The routine generally works fine, but I have a problem with the capitalization of the first letters. For example, a word like 'Acquired' might be converted into 'Acquire' correctly in terms of tense, but the first letter's case could incorrectly change, such as from 'a' to 'A' or vice versa. In my spreadsheet, column B contains various sample words in different tenses, and column C has the correct tense forms but sometimes with the wrong case for the initial letter. I need an Excel formula that will look at the first letter case in column C and compare it to the first letter in column B. If the case is different, the formula should update the first letter in column C to match the case of column B's first letter, ensuring the word in column C remains in the correct tense. Which formula could I use in a new column to achieve this correction without affecting the existing tense forms?Formula needs to change word from \"address\" to \"Address\" to match source word's \"A\" in col B.Use the formula to process the input file and output the result to a new file.
+
+46167   如何在Excel中创建一个公式，用于根据特定条件计算多个单元格的总和？具体来说，我想计算某一列中“产品ID”（PRODUCT ID）与给定值（例如111111）匹配的行中的数量（QTY）的总和。请在D2单元格中输出答案。将我输入的excel文件中，同样产品ID的QTY均进行求和
+
+CF_15439   How can I create a conditional formatting rule that changes the cell color to yellow in columns E to J when column D has text and the cells in columns E to J are empty, and removes the yellow format when text is entered into these cells? I want to create a format that when column D is filled (for a specific row), the other columns (in that row) have a yellow format when their cell is not filled. When someone enters text in column E onwards, the yellow format should disappear.
+
+41-12   处理excel文件中的F7:F12单元格范围内以粗体格式显示的名称数量，并将统计结果显示在文件的K12单元格中
+
+38985   deal with two tables in Excel. In table 1, I have a column with duplicate names, and in table 2, I have those same names but each is associated with different values. I need to find a way to retrieve the corresponding data from table 2 and place it into table 1 in a transposed manner, i.e., going across the row instead of down a column.
+
+57317  在Excel中设置一个函数，使我能够输入产品名称，然后显示所有购买该产品的客户名称，而无需手动筛选数据，类似于执行VLOOKUP操作.
+
+5732   在两个不同的工作表中，当源端口、设备大小和目标端口匹配时，从其中检索出对应的体积值，体积值记录在与不同端口关联的三个独立列中。尝试使用Index & Match函数,避免公式的输出结果是“#N/A”。
